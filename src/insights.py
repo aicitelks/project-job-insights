@@ -31,7 +31,7 @@ def get_unique_industries(path):
     jobs_list = read(path)
     unique_industries = set()
     for job in jobs_list:
-        if job["industry"] != '':
+        if job["industry"] != "":
             unique_industries.add(job["industry"])
     return unique_industries
 
@@ -55,21 +55,20 @@ def filter_by_industry(jobs, industry):
 
 
 def get_max_salary(path):
-    """Get the maximum salary of all jobs
-
-    Must call `read`
-
-    Parameters
-    ----------
-    path : str
-        Must be passed to `read`
-
-    Returns
-    -------
-    int
-        The maximum salary paid out of all job opportunities
-    """
-    pass
+    jobs_list = read(path)
+    salaries = []
+    for job in jobs_list:
+        # ESSA CONDIÇÃO FOI VERIFICADA DE DUAS FORMAS:
+        # UMA IDENTIFICANDO O QUEM VEM jobs_list["max_salary"],
+        # PARA ELIMINAR OS SALÁRIOS " "
+        # A OUTRA OLHANDO O ARQUIVO DE MOCK, jobs_with_salaries.csv
+        # QUE PASSA NA COLUNA max_salary UM 'invalid',
+        # POIS ANTES DE TRATAR ESSA SEGUNDA CONDIÇÃO,
+        # DAVA O ERRO: ValueError (...) 'invalid'
+        if job["max_salary"] != "" and job["max_salary"] != "invalid":
+            salaries.append(int(job["max_salary"]))
+    # print("Salário máximo encontrado: ", (max(salaries)))
+    return max(salaries)
 
 
 def get_min_salary(path):
