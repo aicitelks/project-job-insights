@@ -57,6 +57,7 @@ def filter_by_industry(jobs, industry):
 def get_max_salary(path):
     jobs_list = read(path)
     salaries = []
+
     for job in jobs_list:
         # ESSA CONDIÇÃO FOI VERIFICADA DE DUAS FORMAS:
         # UMA IDENTIFICANDO O QUEM VEM jobs_list["max_salary"],
@@ -67,26 +68,20 @@ def get_max_salary(path):
         # DAVA O ERRO: ValueError (...) 'invalid'
         if job["max_salary"] != "" and job["max_salary"] != "invalid":
             salaries.append(int(job["max_salary"]))
+
     # print("Salário máximo encontrado: ", (max(salaries)))
     return max(salaries)
 
 
 def get_min_salary(path):
-    """Get the minimum salary of all jobs
+    jobs_list = read(path)
+    salaries = []
 
-    Must call `read`
+    for job in jobs_list:
+        if job["min_salary"] != "" and job["min_salary"] != "invalid":
+            salaries.append(int(job["min_salary"]))
 
-    Parameters
-    ----------
-    path : str
-        Must be passed to `read`
-
-    Returns
-    -------
-    int
-        The minimum salary paid out of all job opportunities
-    """
-    pass
+    return min(salaries)
 
 
 def matches_salary_range(job, salary):
