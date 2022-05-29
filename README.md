@@ -15,7 +15,7 @@ Também foi desenvolvido um teste para validar o retorno de uma função previam
 Os dados foram extraídos do site [Glassdoor](https://www.glassdoor.com.br//) e obtidos através do [Kaggle](https://www.kaggle.com/atharvap329/glassdoor-data-science-job-data), uma plataforma que disponibliza conjuntos de dados para cientistas de dados.
 
 
-## Stacks utilizadas
+## 📎Stacks utilizadas
 
 **Back-end:** Python 3, Flask
 
@@ -91,4 +91,4 @@ E acesse o site gerado pelo Flask `http://localhost:5000`
 ![Nota do projeto na Trybe](/job_insights.jpg)
 ___
 
-#### 💻 Desenvolvido por <img src="/ww1.png" width="30"/> [@aicitelks](https://github.com/aicitelks/) 📆 2022 🔗 [LinkedIn](https://www.linkedin.com/in/leticiacastro87)
+#### 💻 Desenvolvido por [@aicitelks](https://github.com/aicitelks/) 📆 2022 🔗 [LinkedIn](https://www.linkedin.com/in/leticiacastro87)
