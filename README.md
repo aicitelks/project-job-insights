@@ -1,23 +1,23 @@
 # 💼 Boas-vindas ao Projeto Job Insigths!
-Este projeto foi desenvolvido durante o curso da [Trybe](https://www.betrybe.com/).
+Este projeto foi desenvolvido durante o curso de Desenvolvimento Web da [Trybe](https://www.betrybe.com/).
 
     > Projeto 33 🚀
     > Módulo - Ciência da Computação
     > Bloco 33 - Introdução à Python
 
 ## 📈 Sobre o projeto
-Neste projeto foram implementadas análises a partir de um conjunto de dados sobre empregos. O objetivo era realizar a implementação de algumas funções capazes de fazerem manipulações com esses dados.
+Neste projeto foram implementadas análises a partir de um conjunto de dados sobre empregos. O objetivo era realizar a implementação de funções capazes de fazerem manipulações com esses dados.
 
-Tais implementações foram incorporadas a um aplicativo Web desenvolvido com **Flask** (um framework web muito popular na comunidade Python) que já veio implementado no projeto pela Trybe. Também foram escritos testes para a implementação de uma análise de dados.
+Tais implementações foram incorporadas a um aplicativo Web desenvolvido com **Flask** (um framework web muito popular na comunidade Python) que já veio implementado no projeto pela Trybe.
 
 Também foi desenvolvido um teste para validar o retorno de uma função previamente implementada pela Trybe.
 
 Os dados foram extraídos do site [Glassdoor](https://www.glassdoor.com.br//) e obtidos através do [Kaggle](https://www.kaggle.com/atharvap329/glassdoor-data-science-job-data), uma plataforma que disponibliza conjuntos de dados para cientistas de dados.
 
 
-## 📎Stacks utilizadas
+## 📎Stacks
 
-**Back-end:** Python 3, Flask
+**Back-end:** Python, Flask, Flake8, Black, Pytest
 
 ## 📃 Lista de requisitos 
 À seguir, listo todos os requisitos solicitados no projeto para que fossem desenvolvidos por mim.
@@ -84,7 +84,7 @@ E acesse o site gerado pelo Flask `http://localhost:5000`
 
 
 ### 🚧 Implementações futuras
-- Desenvolver a página de um job (requisito ônus)
+- Desenvolver a página de um job (requisito bônus)
 
 ## 🏆 Nota do projeto na Trybe
 
